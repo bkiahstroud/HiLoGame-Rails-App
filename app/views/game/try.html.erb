@@ -1,5 +1,10 @@
 <header><h1>Testing</h1></header>
 
+<form action="game" method="get">
+    <input type="number" name="guess" min="1" max="100" required/>
+    <input type="submit" value="Submit Number"/>
+</form>
+
 <h3>Guess is <%= params[:guess]%></h3>
 
 <h3><%= @result_string %></h3>
